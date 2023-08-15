@@ -1,15 +1,15 @@
-name: Blocking Issues
+# name: Blocking Issues
 
-on:
-  issues:
-    types: [closed]
-  pull_request_target:
-    types: [opened, edited]
+# on:
+#   issues:
+#     types: [closed]
+#   pull_request_target:
+#     types: [opened, edited]
 
-jobs:
-  blocking_issues:
-    runs-on: ubuntu-latest
-    name: Checks for blocking issues
+# jobs:
+#   blocking_issues:
+#     runs-on: ubuntu-latest
+#     name: Checks for blocking issues
 
-    steps:
-      - uses: Levi-Lesches/blocking-issues@v1.1
+#     steps:
+#       - uses: Levi-Lesches/blocking-issues@v1.1
