@@ -1,7 +1,10 @@
 name: Check version and prepare release
 
 on:
-  workflow_dispatch:
+  push:
+  pull_request:
+    branches:
+      - main
 
 jobs:
   check-version:
@@ -63,6 +66,3 @@ jobs:
         draft: false
         prerelease: false
         token: ${{ secrets.GH_TAGGING_TOKEN }}
-
-releaseCondition: &releaseCondition
-  startsWith(github.head_ref, 'release/') || startsWith(github.ref, 'refs/heads/release/')
