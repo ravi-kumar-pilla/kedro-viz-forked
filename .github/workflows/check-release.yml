@@ -11,7 +11,7 @@ on:
 jobs:
   check-version:
     runs-on: ubuntu-latest
-    if: *releaseCondition
+    if: startsWith(github.head_ref, 'release/') || startsWith(github.ref, 'refs/heads/release/')
     steps:
     - uses: actions/checkout@v3
 
@@ -42,9 +42,7 @@ jobs:
 
   prepare-release:
     needs: [check-version]
-    if: |
-      *releaseCondition &&
-      ${{ needs.check-version.outputs.new_release == 'true' }}
+    if: ${{ needs.check-version.outputs.new_release == 'true' }}
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
