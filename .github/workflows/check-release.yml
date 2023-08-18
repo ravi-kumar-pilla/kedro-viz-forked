@@ -63,3 +63,6 @@ jobs:
         draft: false
         prerelease: false
         token: ${{ secrets.GH_TAGGING_TOKEN }}
+
+releaseCondition: &releaseCondition
+  startsWith(github.head_ref, 'release/') || startsWith(github.ref, 'refs/heads/release/')
