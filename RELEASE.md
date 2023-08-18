@@ -6,6 +6,25 @@ Please follow the established format:
 - Include the ID number for the related PR (or PRs) in parentheses
 -->
 
+# Upcoming Release 6.3.7
+
+## Major features and improvements
+
+- Some support
+
+## Bug fixes and other changes
+
+- Some bug fix
+
+# Upcoming Release 6.3.6
+
+## Major features and improvements
+
+- Some support
+
+## Bug fixes and other changes
+
+- Some bug fix
 
 # Release 6.3.5
 
