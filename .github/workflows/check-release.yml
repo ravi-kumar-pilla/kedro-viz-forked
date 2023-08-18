@@ -2,12 +2,14 @@ name: Check version and prepare release
 
 on:
   push:
+  pull_request:
     branches:
       - main
 
 jobs:
   check-version:
     runs-on: ubuntu-latest
+    if: startsWith(github.head_ref, 'release/') || startsWith(github.ref, 'refs/heads/release/')
     steps:
     - uses: actions/checkout@v3
 
