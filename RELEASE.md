@@ -26,11 +26,12 @@ Please follow the established format:
 
 - Some bug fix
 
-# Release 6.3.6
+# Release 6.3.7
 
 ## Major features and improvements
 
 - Add support for displaying dataset statistics in the metadata panel. (#1472)
+- Add enhancement in release process
 
 ## Bug fixes and other changes
 
