@@ -10,7 +10,7 @@ Please follow the established format:
 
 ## Major features and improvements
 
-- Some support
+- Some support with feature
 
 ## Bug fixes and other changes
 
