@@ -26,7 +26,7 @@ Please follow the established format:
 
 - Some bug fix
 
-# Release 6.3.5
+# Release 6.3.6
 
 ## Major features and improvements
 
